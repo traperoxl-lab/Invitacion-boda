@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invitación de Boda — Ana María & Cristian</title>
+  <meta name="description" content="Invitación digital de boda — Ana María & Cristian" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuentes: Great Vibes para títulos y MonteCarlo para texto -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=MonteCarlo&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --lila:#8b5cf6;
+      --lila-osc:#6d28d9;
+      --plateado:#c7cbd4;
+      --dorado:#d4af37;
+      --texto:#0f172a;
+      --muted:#475569;
+      --blanco:#ffffff;
+      --bg: linear-gradient(180deg,#ffffff 0%, #f8fafc 40%, #eef1f6 100%);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'MonteCarlo',cursive;
+      color:var(--texto);
+      background:var(--bg);
+      background-image: url('https://i.imgur.com/9bK0ZpF.png'); /* patrón floral suave */
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    header{
+      position:sticky;
+      top:0;
+      background:rgba(255,255,255,.85);
+      backdrop-filter: blur(10px);
+      padding:10px 20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #e5e7eb;
+    }
+    header h1{
+      font-family:'Great Vibes',cursive;
+      font-size:28px;
+      color:var(--lila-osc);
+    }
+    header nav a{
+      color:#334155;
+      text-decoration:none;
+      margin:0 8px;
+      font-weight:500;
+    }
+    section{
+      padding:60px 20px;
+      text-align:center;
+    }
+    h2{
+      font-family:'Great Vibes',cursive;
+      font-size:36px;
+      color:var(--lila-osc);
+      margin-bottom:20px;
+    }
+    p{
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
+      color:var(--texto);
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:15px;
+      margin-top:20px;
+    }
+    .gallery img{
+      width:100%;
+      border-radius:10px;
+      object-fit:cover;
+      border:3px solid var(--plateado);
+    }
+    iframe{
+      width:100%;
+      height:300px;
+      border:0;
+      border-radius:10px;
+      margin-top:20px;
+    }
+    .btn{
+      display:inline-block;
+      padding:12px 24px;
+      border-radius:8px;
+      background:linear-gradient(135deg,var(--lila),var(--lila-osc));
+      color:white;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:20px;
+    }
+    footer{
+      text-align:center;
+      padding:20px;
+      font-size:14px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ana María & Cristian</h1>
+    <nav>
+      <a href="#portada">Portada</a>
+      <a href="#historia">Nuestra Historia</a>
+      <a href="#galeria">Galería</a>
+      <a href="#programacion">Programación</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#rsvp">Confirmar</a>
+    </nav>
+  </header>
+
+  <!-- 1. Portada -->
+  <section id="portada" style="background-color: rgba(255,255,255,0.7); border-radius:15px;">
+    <h2>¡Nos Casamos!</h2>
+    <img src="https://images.unsplash.com/photo-1522672261180-6cb766a05f91?q=80&w=1200&auto=format&fit=crop" alt="Novios" style="max-width:90%; border-radius:15px; border:5px solid var(--dorado);">
+    <p>Con la bendición de Dios y nuestras familias, queremos invitarte a celebrar este día tan especial con nosotros.</p>
+  </section>
+
+  <!-- 2. Nuestra Historia -->
+  <section id="historia">
+    <h2>Nuestra Historia</h2>
+    <p>Hace 5 años nuestras miradas se cruzaron por primera vez, y desde ese momento nuestras vidas cambiaron para siempre. Hemos compartido aventuras, sueños y retos, y ahora queremos dar el paso más importante juntos.</p>
+  </section>
+
+  <!-- 3. Galería -->
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=600&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a57?q=80&w=600&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1522672261180-6cb766a05f91?q=80&w=600&auto=format&fit=crop" alt="">
+    </div>
+  </section>
+
+  <!-- 4. Programación -->
+  <section id="programacion">
+    <h2>Programación</h2>
+    <p>3:00 PM - Ceremonia Religiosa</p>
+    <p>4:30 PM - Recepción</p>
+    <p>6:00 PM - Cena</p>
+    <p>8:00 PM - Baile y celebración</p>
+  </section>
+
+  <!-- 5. Ubicación -->
+  <section id="ubicacion">
+    <h2>Ubicación</h2>
+    <iframe src="https://maps.google.com/maps?q=Criadero%20La%20Viejoteca&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <!-- 6. Preguntas Frecuentes -->
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <p><strong>¿Hay código de vestimenta?</strong> Sí, formal elegante en tonos claros.</p>
+    <p><strong>¿Puedo llevar acompañante?</strong> Claro, solo confírmalo al RSVP.</p>
+    <p><strong>¿Habrá estacionamiento?</strong> Sí, hay parqueadero gratuito en el lugar.</p>
+  </section>
+
+  <!-- 7. Confirmar Invitación -->
+  <section id="rsvp">
+    <h2>Confirma tu asistencia</h2>
+    <a class="btn" href="https://wa.me/573001112233?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20de%20Ana%20Mar%C3%ADa%20y%20Cristian.">Confirmar por WhatsApp</a>
+  </section>
+
+  <footer>
+    Hecho con ❤ por los novios
+  </footer>
+</body>
+</html>
